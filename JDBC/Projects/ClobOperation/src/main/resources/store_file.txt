@@ -1,0 +1,6 @@
+A CLOB (Character Large Object) is used to store large amounts of text data in a database. It is ideal for storing long documents, JSON, XML, or other textual content. In JDBC, CLOB data can be inserted and retrieved using PreparedStatement and ResultSet.
+
+For your Maven project in STS, this guide demonstrates:
+
+How to store text as a CLOB in a database, reading it from the resources folder.
+How to retrieve the CLOB from the database and save it back to the resources folder.
