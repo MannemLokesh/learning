@@ -12,36 +12,37 @@
     content="About MannemLokesh, Core Java MannemLokesh, JDBC MannemLokesh, Servlets & JSP MannemLokesh, Hibernate MannemLokesh, Spring MannemLokesh, Spring Boot MannemLokesh, DSA MannemLokesh, Docker MannemLokesh, Git MannemLokesh">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
-        function fetchAndPrintConceptsAsCards(concept) {
-          let classNames = $('.${concept}').attr('class');
-          if (!classNames.includes("content-added")) {
-            fetch("./${concept}.json")
-              .then(response => {
+       function fetchAndPrintConceptsAsCards(concept) {
+    let classNames = $(`.${concept}`).attr('class');
+    if (!classNames || !classNames.includes("content-added")) {
+        fetch(`./${concept}.json`)
+            .then(response => {
                 if (!response.ok) {
-                  throw new Error('Network response was not ok ' + response.statusText);
+                    throw new Error('Network response was not ok ' + response.statusText);
                 }
                 return response.json();
-              })
-              .then(data => {
+            })
+            .then(data => {
                 const htmlContent = data.map(item => `
-                                                <div class="card">
-                                                    <h5>${item.title}</h5>
-                                                    <p class="scrollable-paragraph">${item.description}</p>
-                                                    <a class="doc-git" href="${item.documentation.href}" target="${item.documentation.target == null ? "" : item.documentation.target}">Documentation</a>
-                                                    <p></p>
-                                                    <a class="doc-git" href="${item.github_examples.href}" target="${item.github_examples.target == null ? "" : item.github_examples.target}">Github Examples</a>
-                                                </div>
-                                            `).join('');
+                    <div class="card">
+                        <h5>${item.title}</h5>
+                        <p class="scrollable-paragraph">${item.description}</p>
+                        <a class="doc-git" href="${item.documentation.href}" target="${item.documentation.target == null ? "" : item.documentation.target}">Documentation</a>
+                        <p></p>
+                        <a class="doc-git" href="${item.github_examples.href}" target="${item.github_examples.target == null ? "" : item.github_examples.target}">Github Examples</a>
+                    </div>
+                `).join('');
 
-                $("#${concept}").html(htmlContent);
-                $(".${concept}").addClass("content-added");
+                $(`#${concept}`).html(htmlContent);
+                $(`.${concept}`).addClass("content-added");
                 $(".cards-div").show();
-              })
-              .catch(error => {
+            })
+            .catch(error => {
                 console.error('There was a problem with the fetch operation:', error);
-              });
-          } 
-        }
+            });
+    }
+}
+
       
     $(document).ready(function () {
       //toggle hide and show
