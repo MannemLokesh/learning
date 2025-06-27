@@ -1,0 +1,266 @@
+[
+  {
+    "title": "What is JDBC?",
+    "description": "JDBC  stands  for  Java  Database  Connectivity.  JDBC  is  a  Java  API  to  connect  and execute the query with the database. It is a part of JavaSE (Java Standard Edition). JDBC API uses JDBC drivers to connect with the database.  The  JDBC  library  includes  APIs  for  each  of  the  tasks  mentioned  below  that  are commonly associated with database usage. •  Making a connection to a database. •  Creating SQL or MySQL statements. • Executing SQL or MySQL queries in the database. •  Viewing & Modifying the resulting records.",
+    "documentation": {
+      "href": "/JDBC/html/1%20What%20is%20JDBC.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "#",
+      "target": null
+    }
+  },
+  {
+    "title": "Types of JDBC Drivers",
+    "description": "JDBC drivers implement the defined interfaces in the JDBC API, for interacting with your  database  server.  For  example,  using  JDBC  drivers  enable  you  to  open  database connections  and  to  interact  with  it  by  sending  SQL  or  database  commands  then  receiving results with Java. The Java.sql package that ships with JDK, contains various classes with their behaviours defined and their actual implementaions are done in third-party drivers. Third party vendors implements the java.sql.Driver interface in their database driver. ",
+    "documentation": {
+      "href": "/JDBC/html/2%20Types%20of%20JDBC%20Drivers.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "#",
+      "target": null
+    }
+  },
+  {
+    "title": "Java Database Connectivity with 5 Steps",
+    "description": "There are 5 steps to connect any java application with the database using JDBC. These steps are as follows: o  Register the Driver class o  Create connection o  Create statement o  Execute queries o  Close connection",
+    "documentation": {
+      "href": "/JDBC/html/3%20Java%20Database%20Connectivity%20with%205%20Steps.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "#",
+      "target": null
+    }
+  },
+  {
+    "title": "Connectivity with MySQL",
+    "description": "To connect Java application with the MySQL database, we need to follow 5 following steps. In this example we are using MySql as the database. So, we need to know following information for the mysql database:  1.  Driver class: The driver class for the mysql database is com.mysql.jdbc.Driver. 2.  Connection  URL: The  connection  URL  for  the  mysql  database is jdbc:mysql://localhost:3306/organization where  jdbc  is  the  API,  mysql  is  the database, localhost is the server name on which mysql is running, we may also use IP address, 3306 is the port number and organization is the database name. We may use any database, in such case, we need to replace the organization with our database name. 3.  Username: The default username for the mysql database is root. 4.  Password: It is the password given by  the  user  at the time of installing the  mysql database. In this example, we are going to use root as the password.",
+    "documentation": {
+      "href": "/JDBC/html/4%20Connectivity%20with%20MySQL.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/ConnectivityWithMySQL/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  },
+  {
+    "title": "DriverManager class",
+    "description": "The  DriverManager  class  is  the  component  of  JDBC  API  and  also  a  member  of the java.sql package. The DriverManager class acts as an interface between users and drivers. It keeps track of the drivers that are available and handles establishing a connection between a database  and  the  appropriate  driver.  It  contains  all  the  appropriate  methods  to  register  and deregister the database driver class and to create a connection between a Java application and the database. The DriverManager class maintains a list of Driver classes that have registered themselves by calling the method DriverManager.registerDriver(). Note that before interacting with a Database, it  is  a  mandatory process to  register  the  driver; otherwise,  an exception is thrown.",
+    "documentation": {
+      "href": "/JDBC/html/5%20DriverManager%20class.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "#",
+      "target": null
+    }
+  },
+  {
+    "title": "Connection interface",
+    "description": "A  Connection  is  a  session  between  a  Java  application  and  a  database.  It  helps  to establish a connection with the database. The Connection interface is a factory of Statement, PreparedStatement, and DatabaseMetaData, i.e., an object of Connection can be used to get the object of Statement and DatabaseMetaData. The Connection interface provide many methods for  transaction  management  like  commit(),  rollback(),  setAutoCommit(), setTransactionIsolation(), etc.  Note: By default, connection commits the changes after executing queries.",
+    "documentation": {
+      "href": "/JDBC/html/6%20Connection%20interface.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "#",
+      "target": null
+    }
+  },
+  {
+    "title": "Statement interface",
+    "description": "The Statement interface provides methods to execute queries with the database. The statement interface is a factory of ResultSet i.e. it provides factory method to get the object of ResultSet. Use this for general-purpose access to your database. Useful when you are using static SQL statements at runtime. The Statement interface cannot accept parameters.  Commonly used methods of Statement interface: The important methods of Statement interface are as follows:  1)  public ResultSet executeQuery(String sql): is  used to execute  SELECT  query.  It returns the object of ResultSet.",
+    "documentation": {
+      "href": "/JDBC/html/7%20Statement%20interface.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/StatementInterface/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  },
+  {
+    "title": "ResultSet interface",
+    "description": "The SQL statements that read data from a database query, return the data in a result set. The SELECT statement is the standard way to select rows from a database and view them in a result set. The java.sql.ResultSet interface represents the result set of a database query.   Note: By default, ResultSet object can be moved forward only and it is not updatable.  A ResultSet object maintains a cursor that points to the current row in the result set. The term \"result set\" refers to the row and column data contained in a ResultSet object.",
+    "documentation": {
+      "href": "/JDBC/html/8%20ResultSet%20interface.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/ResultSetInterface/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  },
+  {
+    "title": "PreparedStatement",
+    "description": "The PreparedStatement interface is a subinterface of Statement. It is used to execute parameterized query. which gives you added functionality with a couple of advantages over a generic Statement  object.  This  statement  gives  you  the  flexibility  of  supplying  arguments dynamically.  Let's see the example of parameterized query: String sql = \"insert into emp values(?,?,?)\";    As you can see, we are passing parameter (?) for the values. Its value will be set by calling the setter methods of PreparedStatement.",
+    "documentation": {
+      "href": "/JDBC/html/9%20PreparedStatement.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/PreparedStatement/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  },
+  {
+    "title": "Data Types",
+    "description": "The JDBC driver converts the Java data type to the appropriate JDBC type, before sending it to the database. It uses a default mapping for most data types. For example, a Java int is converted to an SQL INTEGER. Default mappings were created to provide consistency between drivers.  The following table summarizes the default JDBC data type that the Java data type is converted to, when you call the setXXX() method of the PreparedStatement or CallableStatement object or the ResultSet.updateXXX() method.",
+    "documentation": {
+      "href": "/JDBC/html/10%20Data%20Types.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/DataTypes/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  },
+  {
+    "title": "ResultSetMetaData interface",
+    "description": "The ResultSetMetaData interface in Java is part of the java.sql package and provides methods to retrieve metadata about the columns of a ResultSet. This is useful when you need to dynamically understand the structure of query results, especially for generic database operations. The metadata means data about data i.e. we can get further information from the data. If you have to get metadata of a table like total number of column, column name, column type etc. , ResultSetMetaData interface is useful because it provides methods to get metadata from the ResultSet object.",
+    "documentation": {
+      "href": "/JDBC/html/11%20ResultSetMetaData%20interface.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/ResultSetMetaData/src/main/java/com/lokesh",
+      "target": null
+    }
+  },
+  {
+    "title": "DatabaseMetaData interface",
+    "description": "The DatabaseMetaData interface in Java, part of the java.sql package, provides metadata about the database as a whole. It helps retrieve information about the database, its tables, supported features, and much more. This is particularly useful for developing databaseagnostic applications. Key Features of DatabaseMetaData • Retrieve general information about the database (e.g., version, driver, name). • Explore table and column details. • Check supported SQL features and database-specific functionalities. • Retrieve schema information for database introspection.",
+    "documentation": {
+      "href": "/JDBC/html/12%20DatabaseMetaData%20interface.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/DatabaseMetaData/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  },
+  {
+    "title": "BLOB Operation",
+    "description": "A BLOB (Binary Large Object) is used to store binary data, such as images, videos, or other multimedia objects, in a database. In JDBC, we can use PreparedStatement for inserting BLOB data and ResultSet for retrieving it.   Signature of setBinaryStream method The syntax of setBinaryStream() method is given below: 1) public void setBinaryStream(int paramIndex,InputStream stream) throws SQLException   2)  public  void  setBinaryStream(int  paramIndex,InputStream  stream,long  length)  throws SQLException",
+    "documentation": {
+      "href": "/JDBC/html/13%20BLOB%20Operation.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/BlobOperation/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  },
+  {
+    "title": "CLOB Operation",
+    "description": "A CLOB (Character Large Object) is used to store large amounts of text  data in a database. It is ideal for storing long documents, JSON, XML, or other textual content. In JDBC, CLOB data can be inserted and retrieved using PreparedStatement and ResultSet.  Database Table Creation Run the following SQL query to create the required table:  CREATE TABLE ClobExample (     id INT AUTO_INCREMENT PRIMARY KEY,     name VARCHAR(255),     text_data CLOB );",
+    "documentation": {
+      "href": "/JDBC/html/14%20CLOB%20Operation.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/ClobOperation/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  },
+  {
+    "title": "Transaction Management",
+    "description": "Transaction management in JDBC ensures that a set of operations on a database is executed  as  a  single  unit.  If  any  operation  in  the  transaction  fails,  all  operations  in  the transaction can be rolled back to  maintain  database integrity. JDBC provides control  over transactions through the java.sql.Connection interface.  If your JDBC Connection is in auto-commit mode, which it is by default, then every SQL statement  is  committed to  the  database upon  its completion.  That  may be  fine  for simple applications, but there are three reasons why you may want to turn off the auto-commit and manage your own transactions − •  To increase performance. •  To maintain the integrity of business processes. •  To use distributed transactions.",
+    "documentation": {
+      "href": "/JDBC/html/15%20Transaction%20Management.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/TransactionManagement/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  },
+  {
+    "title": "SQLException in JDBC",
+    "description": "Exception handling allows you to handle exceptional conditions such as programdefined errors in a controlled fashion. When an exception condition occurs, an exception is thrown. The term thrown means that current program execution stops, and the control is redirected to the nearest applicable catch clause. If no applicable catch clause exists, then the program's execution ends. JDBC Exception handling is very similar to the Java Exception handling but for JDBC, the most common exception you'll deal with is java.sql.SQLException.",
+    "documentation": {
+      "href": "/JDBC/html/16%20SQLException%20in%20JDBC.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/SQLExceptionInJDBC/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  },
+  {
+    "title": "Batch Processing in JDBC",
+    "description": "Batch processing is a feature in JDBC that allows you to execute a group of SQL statements as a single batch. This reduces the number of database calls, thus improving performance and efficiency, especially for repetitive tasks like inserting or updating multiple rows. Instead of executing a single query, we can execute a batch (group) of queries. It makes the performance fast. It is because when one sends multiple statements of SQL at once to the database, the communication overhead is reduced significantly, as one is not communicating with the database frequently, which in turn results to fast performance. The java.sql.Statement and java.sql.PreparedStatement interfaces provide methods for batch processing.",
+    "documentation": {
+      "href": "/JDBC/html/17%20Batch%20Processing%20in%20JDBC.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/BatchProcessingInJDBC/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  },
+  {
+    "title": "CallableStatement (or) Stored Procedure",
+    "description": "A CallableStatement is a Java interface in the JDBC API that allows a Java application to call stored procedures in a database. Stored procedures are precompiled SQL code stored in the database, which can accept parameters and perform a wide range of database operations such as inserting, updating, deleting, or returning results. CallableStatement interface is used to call the stored procedures and functions. We can have business logic on the database by the use of stored procedures and functions that will make the performance better because these are precompiled. Suppose you need the get the age of the employee based on the date of birth, you may create a function that receives date as the input and returns age of the employee as the output.",
+    "documentation": {
+      "href": "/JDBC/html/18%20CallableStatement%20(or)%20Stored%20Procedure.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/CallableStatementOrStoredProcedure/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  },
+  {
+    "title": "RowSet interface",
+    "description": "An instance of RowSet is the Java bean component because it has properties and Java bean notification mechanism. It is the wrapper of ResultSet. A JDBC RowSet facilitates a mechanism to keep the data in tabular form. It happens to make the data more flexible as well as easier as compared to a ResultSet. The connection between the data source and the RowSet object is maintained throughout its life cycle. The RowSet supports development models that are component-based such as JavaBeans, with the standard set of properties and the mechanism of event notification.  It was in the JDBC 2.0, the support for the RowSet was introduced using the optional packages. But the implementations were standardized for RowSet in the JDBC RowSet Implementations Specification  (JSR-114)  by  the  Sun  Microsystems  that  is  being  present  in  the  JDK  (Java Development Kit) 5.0.",
+    "documentation": {
+      "href": "/JDBC/html/19%20RowSet%20interface.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/ResultSetInterface/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  },
+  {
+    "title": "ACID Properties of Transaction",
+    "description": "What is a Transaction? A transaction is a single logical unit of operations which accesses and updates the contents of a database.  20.1 ACID properties of a Transaction Transactions  also  have  properties  that  must  be  maintained  in  order  to  keep  database consistency, known as ACID properties: A for Atomicity, C for Consistency, I for Isolation, D for Durability.  •  Atomicity  −  Transactions  involve  a  group  of  operations  performed  sequentially. Atomicity says the entire group of operations either succeed or fail. •  Consistency  −  This  property  involves  ensuring  only  consistent  data  is  added  to database. If any error occurs, database is moved to the initial state. •  Isolation − Transactions must be isolated from each other, otherwise the data maybe corrupted. Isolation levels can be read uncommitted, read committed, repeatable read and serializable. These are described in the next section. •  Durability  − This property ensures that completed transaction will persist the data appropriately and also in the event of a server failure/system crash.",
+    "documentation": {
+      "href": "/JDBC/html/20%20ACID%20Properties%20of%20Transaction.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "#",
+      "target": null
+    }
+  },
+  {
+    "title": "Connection Pooling",
+    "description": "For web  sites  with  high  traffic,  resources  to  acquire  a  database  connection  can  be expensive. Also, imagine a situation where there are 500 concurrent users of a web site and each is trying to get hold of a connection to select or update data. In this scenario, to prevent multiple users to corrupt the data, the database has locks. When a user does a select on a table, the table is locked. No other user can get hold of the table unless the lock is freed. For 500 users to wait for a connection is not acceptable.  Connection pooling in Java is a technique used to improve the performance of database-driven applications. Instead of creating a new connection every time the application needs to interact with the database, a pool of connections is created and managed by a connection pool manager. This eliminates the overhead of establishing a new connection each time, resulting in faster response times and better resource utilization.",
+    "documentation": {
+      "href": "/JDBC/html/21%20Connection%20Pooling.html",
+      "target": "_blank"
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/ConnectionPooling/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  },
+  {
+    "title": "JDBC Examples",
+    "description": "DBC, or Java Database Connectivity, allows Java applications to interact with databases. It involves connecting to a database, executing SQL queries, and processing the results. Here's a breakdown with examples: 1. Core Components: Connection: Establishes a connection to the database. Statement: An interface for executing SQL statements. PreparedStatement: An interface for executing precompiled SQL statements, useful for preventing SQL injection and improving performance. CallableStatement: An interface for executing stored procedures. ResultSet: Represents the result of a query.",
+    "documentation": {
+      "href": "#",
+      "target": null
+    },
+    "github_examples": {
+      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/JDBCExamples/src/main/java/com/lokesh",
+      "target": "_blank"
+    }
+  }
+]
