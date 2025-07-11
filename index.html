@@ -13,7 +13,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
     function toggleFunction() {
-      $(`#${$(this).attr('class').split(" ")[1]}`).toggle();
+      const secondClass = $(element).attr('class')?.split(" ")[1];
+      if (secondClass) {
+        $(`#${secondClass}`).toggle();
+      }
     }
     async function fetchAndPrintTopicsAsAccordians() {
         fetch(`./topics.json`)
