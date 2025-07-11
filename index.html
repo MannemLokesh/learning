@@ -12,6 +12,33 @@
     content="About MannemLokesh, Core Java MannemLokesh, JDBC MannemLokesh, Servlets & JSP MannemLokesh, Hibernate MannemLokesh, Spring MannemLokesh, Spring Boot MannemLokesh, DSA MannemLokesh, Docker MannemLokesh, Git MannemLokesh">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
+    function fetchAndPrintTopicsAsAccordians() {
+        fetch(`./topics.json`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            const htmlContent = data.map(item => `
+                <div class="main">
+                    <div class="div-menu-title">
+                        <h4 class="menu-title ${item.reference_id}" onclick="fetchAndPrintConceptsAsCards('${item.reference_id}')">${item.name}</h2>
+                    </div>
+                    <div class="cards-div" id="${item.reference_id}">
+                    </div>
+                </div>
+            `).join('');
+
+            $(`body`).html(htmlContent);
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+
+    }
+    
     function fetchAndPrintConceptsAsCards(concept) {
       let classNames = $(`.${concept}`).attr('class');
       if (!classNames || !classNames.includes("content-added")) {
@@ -54,7 +81,7 @@
 </head>
 
 <body>
-  <a href="https://cloudconvert.com/pdf-to-html" target="_blank">To Convert PDF to Html File, Click Here..</a>
+  <a href="https://cloudconvert.com/pdf-to-html" target="_blank" style="display:none;">To Convert PDF to Html File, Click Here..</a>
 
   <div class="main">
     <div class="div-menu-title">
