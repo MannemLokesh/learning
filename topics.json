@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Core Java",
+        "reference_id": "core-java"
+    },
+    {
+        "name": "JDBC",
+        "reference_id": "jdbc"
+    },
+    {
+        "name": "Design Patterns",
+        "reference_id": "design-patterns"
+    }
+]
