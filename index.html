@@ -12,7 +12,7 @@
     content="About MannemLokesh, Core Java MannemLokesh, JDBC MannemLokesh, Servlets & JSP MannemLokesh, Hibernate MannemLokesh, Spring MannemLokesh, Spring Boot MannemLokesh, DSA MannemLokesh, Docker MannemLokesh, Git MannemLokesh">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
-    function fetchAndPrintTopicsAsAccordians() {
+    async function fetchAndPrintTopicsAsAccordians() {
         fetch(`./topics.json`)
         .then(response => {
             if (!response.ok) {
@@ -70,7 +70,7 @@
       }
     }
 
-      
+    fetchAndPrintTopicsAsAccordians();
     $(document).ready(function () {
       //toggle hide and show
       $('.menu-title').click(function () {
@@ -82,30 +82,5 @@
 
 <body>
   <a href="https://cloudconvert.com/pdf-to-html" target="_blank" style="display:none;">To Convert PDF to Html File, Click Here..</a>
-
-  <div class="main">
-    <div class="div-menu-title">
-      <h4 class="menu-title core-java" onclick="fetchAndPrintConceptsAsCards('core-java')">Core Java</h2>
-    </div>
-    <div class="cards-div" id="core-java">
-    </div>
-  </div>
-
-  <div class="main">
-    <div class="div-menu-title">
-      <h4 class="menu-title jdbc" onclick="fetchAndPrintConceptsAsCards('jdbc')">JDBC</h2>
-    </div>
-    <div class="cards-div" id="jdbc">
-    </div>
-  </div>
-
-  <div class="main">
-    <div class="div-menu-title">
-      <h4 class="menu-title design-patterns" onclick="fetchAndPrintConceptsAsCards('design-patterns')">Design Patterns</h2>
-    </div>
-    <div class="cards-div" id="design-patterns">
-    </div>
-  </div>
-
 </body>
 </html>
