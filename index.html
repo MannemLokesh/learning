@@ -29,8 +29,8 @@
         .then(data => {
             const htmlContent = data.map(item => `
                 <div class="main">
-                    <div class="div-menu-title" onclick="toggleFunction()">
-                        <h4 class="menu-title ${item.reference_id}" onclick="fetchAndPrintConceptsAsCards('${item.reference_id}')">${item.name}</h2>
+                    <div class="div-menu-title">
+                        <h4 class="menu-title ${item.reference_id}" onclick="fetchAndPrintConceptsAsCards('${item.reference_id}')"  onclick="toggleFunction()">${item.name}</h2>
                     </div>
                     <div class="cards-div" id="${item.reference_id}">
                     </div>
