@@ -12,6 +12,9 @@
     content="About MannemLokesh, Core Java MannemLokesh, JDBC MannemLokesh, Servlets & JSP MannemLokesh, Hibernate MannemLokesh, Spring MannemLokesh, Spring Boot MannemLokesh, DSA MannemLokesh, Docker MannemLokesh, Git MannemLokesh">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
+    function toggleFunction() {
+      $(`#${$(this).attr('class').split(" ")[1]}`).toggle();
+    }
     async function fetchAndPrintTopicsAsAccordians() {
         fetch(`./topics.json`)
         .then(response => {
@@ -23,7 +26,7 @@
         .then(data => {
             const htmlContent = data.map(item => `
                 <div class="main">
-                    <div class="div-menu-title">
+                    <div class="div-menu-title" onclick="toggleFunction()">
                         <h4 class="menu-title ${item.reference_id}" onclick="fetchAndPrintConceptsAsCards('${item.reference_id}')">${item.name}</h2>
                     </div>
                     <div class="cards-div" id="${item.reference_id}">
@@ -71,12 +74,12 @@
     }
 
     fetchAndPrintTopicsAsAccordians();
-    $(document).ready(function () {
-      //toggle hide and show
-      $('.menu-title').click(function () {
-        $(`#${$(this).attr('class').split(" ")[1]}`).toggle();
-      });
-    });
+    // $(document).ready(function () {
+    //   //toggle hide and show
+    //   $('.menu-title').click(function () {
+    //     $(`#${$(this).attr('class').split(" ")[1]}`).toggle();
+    //   });
+    // });
   </script>
 </head>
 
