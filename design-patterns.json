@@ -1,0 +1,326 @@
+[
+    {
+        "title": "1. What are Design Patterns",
+        "description": "Design patterns represent the best practices used by experienced object-oriented software developers. Design patterns are solutions to general problems that software developers faced during software development. These solutions were obtained by trial and error by numerous software developers over quite a substantial period of time.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "2. Builder Design Pattern in Java",
+        "description": "The Builder Design Pattern is a creational design pattern that allows for the step-by-step construction of complex objects. It helps separate the construction logic from the object itself, providing flexibility and readability. In Java, constructing objects with many optional parameters can lead to an explosion of constructors:",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "3. Simple Factory Design Pattern in Java",
+        "description": "The Simple Factory Pattern is a creational design pattern that centralizes object creation logic in one place. It encapsulates the instantiation of classes and provides a single point of control to create objects without exposing the instantiation logic to the client. It is not a part of the official GoF patterns but is widely used in practice.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "4. Factory Method Design Pattern in Java",
+        "description": "The Factory Method Design Pattern is a creational pattern from the Gang of Four (GoF) that defines an interface for creating objects, but lets subclasses alter the type of objects that will be created. It promotes loose coupling and adheres to the Open/Closed Principle.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "5. Prototype Design Pattern in Java",
+        "description": "The Prototype Design Pattern is a creational pattern from the Gang of Four (GoF) that allows you to create new objects by copying existing ones, rather than instantiating new ones from scratch. This is especially useful when: • Object creation is expensive (e.g., network, I/O) • You want to preserve complex configuration",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "6. Abstract Factory Design Pattern in Java",
+        "description": "The Abstract Factory Pattern is a creational design pattern from the Gang of Four (GoF). It provides an interface for creating families of related or dependent objects without specifying their concrete classes. When your code needs to work with various families of related products (UI elements, services, etc.), but shouldn't depend on their concrete classes, the Abstract Factory helps isolate that dependency.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "7. Singleton Design Pattern in Java",
+        "description": "The Singleton Pattern ensures that a class has only one instance and provides a global point of access to it. When only one instance of a class is needed to coordinate actions across a system (e.g., configuration manager, logging, caching), creating multiple instances could result in inconsistency, resource wastage, or conflicts.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "8. Object Pool Design Pattern in Java",
+        "description": "The Object Pool Pattern is a creational design pattern that allows reusing objects that are expensive to create. Instead of creating a new object each time, the pool manages a set of pre-instantiated objects. When object instantiation is expensive in terms of time or resources (e.g., database connections, threads), creating new instances each time can be inefficient.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "9. Adapter Design Pattern in Java",
+        "description": "The Adapter Design Pattern is a structural pattern that allows incompatible interfaces to work together by acting as a bridge. When integrating a new component or library that doesn't match your system’s expected interface, the Adapter pattern helps adapt it without modifying existing code.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "10. Bridge Design Pattern in Java",
+        "description": "The Bridge Design Pattern is a structural pattern that decouples an abstraction from its implementation, so the two can vary independently. You have a hierarchy where one dimension (e.g., abstraction) and another (e.g., implementation) grow independently. Without Bridge, this leads to an explosion of subclasses.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "11. Decorator Design Pattern in Java",
+        "description": "The Decorator Design Pattern is a structural pattern that allows behavior to be added to individual objects dynamically without affecting other objects of the same class. When subclassing leads to too many subclasses just to support different combinations of behaviour, the decorator pattern offers an elegant alternative.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "12. Composite Design Pattern in Java",
+        "description": "The Composite Design Pattern is a structural pattern used to treat individual objects and compositions of objects uniformly. When working with tree-like structures, managing objects and groups of objects differently creates complexity. Composite solves this by treating all elements uniformly.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "13. Facade Design Pattern in Java",
+        "description": "The Facade Design Pattern is a structural pattern that provides a simplified interface to a complex subsystem. When a system becomes complex with many moving parts, it becomes hard to use or integrate. Facade hides the complexity and exposes only the necessary functionality.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "14. Flyweight Design Pattern in Java",
+        "description": "The Flyweight Design Pattern is a structural pattern used to reduce memory consumption by sharing common object data instead of duplicating it. When many objects share common data, creating duplicate instances leads to high memory usage. Flyweight minimizes memory by reusing existing objects.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "15. Proxy Design Pattern in Java",
+        "description": "The Proxy Design Pattern is a structural pattern that provides a surrogate or placeholder for another object to control access to it. When you want to add control, delay, or security over an object’s access or instantiation without changing the original object code.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "16. Chain of Responsibility Design Pattern in Java",
+        "description": "The Chain of Responsibility Design Pattern is a behavioral pattern that allows you to pass a request along a chain of handlers. Each handler can either process the request or pass it to the next handler in the chain. You want to decouple the sender and receiver of a request, and allow multiple potential handlers without hardwiring them into your logic.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "17. Command Design Pattern in Java",
+        "description": "The Command Design Pattern is a behavioral pattern that turns a request into a stand-alone object, allowing you to parameterize methods with different requests, queue them, and support undoable operations. You want to decouple the object that invokes the operation from the one that knows how to perform it. This is especially useful when commands need to be queued, logged, or undone.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "18. Interpreter Design Pattern in Java",
+        "description": "The Interpreter Design Pattern is a behavioral pattern used to define a grammatical representation for a language and provide an interpreter to deal with this grammar. You want to interpret or evaluate sentences in a language (e.g., a scripting language, a rule engine, a DSL).",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "19. Mediator Design Pattern in Java",
+        "description": "The Mediator Design Pattern is a behavioral pattern that reduces coupling between components by having them communicate through a mediator rather than directly. When multiple objects interact in complex ways, this pattern centralizes their communication, reducing dependencies.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "20. Iterator Design Pattern in Java",
+        "description": "The Iterator Design Pattern is a behavioral pattern that provides a way to access elements of a collection object sequentially without exposing its underlying representation. Allows traversal of complex data structures (e.g., arrays, trees, linked lists) without exposing internal structure or breaking encapsulation.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "21. Memento Design Pattern in Java",
+        "description": "The Memento Design Pattern is a behavioral pattern used to capture and restore an object's internal state without violating encapsulation. It enables undo/rollback capabilities by storing snapshots of the object's internal state.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "22. Observer Design Pattern in Java",
+        "description": "The Observer Design Pattern is a behavioral pattern used to create a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically. You need a way for objects (observers) to react automatically when the state of another object (subject) changes without tightly coupling them.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "23. State Design Pattern in Java",
+        "description": "The State Design Pattern is a behavioral design pattern that allows an object to alter its behavior when its internal state changes, appearing as if it changed its class. Helps avoid complex if-else or switch statements by encapsulating state-specific behaviors into separate classes.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "24. Strategy Design Pattern in Java",
+        "description": "The Strategy Pattern is a behavioral pattern that enables selecting an algorithm's behavior at runtime. Removes conditional logic by encapsulating algorithms (strategies) in separate classes and makes them interchangeable.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "25. Template Method Design Pattern in Java",
+        "description": "The Template Method Pattern is a behavioral design pattern that defines the skeleton of an algorithm in a superclass but lets subclasses override specific steps of the algorithm without changing its structure. Avoids code duplication by abstracting common logic into a base class while allowing specific steps to be customized by subclasses.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "26. Visitor Design Pattern in Java",
+        "description": "The Visitor Pattern is a behavioral design pattern that lets you define a new operation without changing the classes of the elements on which it operates. Avoids modifying existing object structures when new behaviors are needed. Promotes the open/closed principle.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    },
+    {
+        "title": "27. Null Object Design Pattern in Java",
+        "description": "The Null Object Pattern is a behavioral design pattern that uses a special object representing a \"do nothing\" or default behavior instead of using null references. Avoids NullPointerException and simplifies client code by replacing null with an object that exhibits neutral behavior.",
+        "documentation": {
+            "href": "/DesignPatterns/1. What are Design Patterns.html",
+            "target": "_blank"
+        },
+        "github_examples": {
+            "href": "#",
+            "target": null
+        }
+    }
+]
