@@ -12,8 +12,8 @@
     content="About MannemLokesh, Core Java MannemLokesh, JDBC MannemLokesh, Servlets & JSP MannemLokesh, Hibernate MannemLokesh, Spring MannemLokesh, Spring Boot MannemLokesh, DSA MannemLokesh, Docker MannemLokesh, Git MannemLokesh">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
-    function toggleFunction() {
-      const secondClass = $(element).attr('class')?.split(" ")[1];
+    function toggleFunction(element) {
+      const secondClass = $(this).attr('class')?.split(" ")[1];
       if (secondClass) {
         $(`#${secondClass}`).toggle();
       }
