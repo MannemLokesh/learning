@@ -12,11 +12,8 @@
     content="About MannemLokesh, Core Java MannemLokesh, JDBC MannemLokesh, Servlets & JSP MannemLokesh, Hibernate MannemLokesh, Spring MannemLokesh, Spring Boot MannemLokesh, DSA MannemLokesh, Docker MannemLokesh, Git MannemLokesh">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
-    function toggleFunction(element) {
-      const secondClass = $(this).attr('class')?.split(" ")[1];
-      if (secondClass) {
-        $(`#${secondClass}`).toggle();
-      }
+    function toggleFunction(reference_id) {
+        $(`#${reference_id}`).toggle();
     }
     async function fetchAndPrintTopicsAsAccordians() {
         fetch(`./topics.json`)
@@ -29,8 +26,8 @@
         .then(data => {
             const htmlContent = data.map(item => `
                 <div class="main">
-                    <div class="div-menu-title">
-                        <h4 class="menu-title ${item.reference_id}" onclick="fetchAndPrintConceptsAsCards('${item.reference_id}')"  onclick="toggleFunction()">${item.name}</h2>
+                    <div class="div-menu-title" onclick="toggleFunction('${item.reference_id}')">
+                        <h4 class="menu-title ${item.reference_id}" onclick="fetchAndPrintConceptsAsCards('${item.reference_id}')">${item.name}</h2>
                     </div>
                     <div class="cards-div" id="${item.reference_id}">
                     </div>
