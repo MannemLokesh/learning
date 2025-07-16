@@ -43,7 +43,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/ConnectivityWithMySQL/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/ConnectivityWithMySQL/src/main/java/com/lokesh",
       "target": "_blank"
     }
   },
@@ -79,7 +79,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/StatementInterface/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/StatementInterface/src/main/java/com/lokesh",
       "target": "_blank"
     }
   },
@@ -91,7 +91,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/ResultSetInterface/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/ResultSetInterface/src/main/java/com/lokesh",
       "target": "_blank"
     }
   },
@@ -103,7 +103,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/PreparedStatement/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/PreparedStatement/src/main/java/com/lokesh",
       "target": "_blank"
     }
   },
@@ -115,7 +115,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/DataTypes/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/DataTypes/src/main/java/com/lokesh",
       "target": "_blank"
     }
   },
@@ -127,7 +127,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/ResultSetMetaData/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/ResultSetMetaData/src/main/java/com/lokesh",
       "target": null
     }
   },
@@ -139,7 +139,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/DatabaseMetaData/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/DatabaseMetaData/src/main/java/com/lokesh",
       "target": "_blank"
     }
   },
@@ -151,7 +151,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/BlobOperation/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/BlobOperation/src/main/java/com/lokesh",
       "target": "_blank"
     }
   },
@@ -163,7 +163,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/ClobOperation/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/ClobOperation/src/main/java/com/lokesh",
       "target": "_blank"
     }
   },
@@ -175,7 +175,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/TransactionManagement/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/TransactionManagement/src/main/java/com/lokesh",
       "target": "_blank"
     }
   },
@@ -187,7 +187,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/SQLExceptionInJDBC/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/SQLExceptionInJDBC/src/main/java/com/lokesh",
       "target": "_blank"
     }
   },
@@ -199,7 +199,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/BatchProcessingInJDBC/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/BatchProcessingInJDBC/src/main/java/com/lokesh",
       "target": "_blank"
     }
   },
@@ -211,7 +211,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/CallableStatementOrStoredProcedure/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/CallableStatementOrStoredProcedure/src/main/java/com/lokesh",
       "target": "_blank"
     }
   },
@@ -223,7 +223,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/ResultSetInterface/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/ResultSetInterface/src/main/java/com/lokesh",
       "target": "_blank"
     }
   },
@@ -247,7 +247,7 @@
       "target": "_blank"
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/ConnectionPooling/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/ConnectionPooling/src/main/java/com/lokesh",
       "target": "_blank"
     }
   },
@@ -259,7 +259,7 @@
       "target": null
     },
     "github_examples": {
-      "href": "https://github.com/MannemLokesh/learning/tree/main/JDBC/Projects/JDBCExamples/src/main/java/com/lokesh",
+      "href": "https://github.com/MannemLokesh/JDBC/tree/master/JDBCExamples/src/main/java/com/lokesh",
       "target": "_blank"
     }
   }
